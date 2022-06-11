@@ -1,23 +1,22 @@
 /*
-1
-01
-010
-0101
-01010
+        1
+    1       2
+1       2       3
+.....n=3
 */
+
+
 #include <iostream>
 using namespace std;
 int main(){
     int n;
     cin>>n;
     for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        }
         for(int j=1;j<=i;j++){
-            if((i+j)%2==0){
-                cout<<"1";
-            }
-            else{
-                cout<<"0";
-            }
+            cout<<j<<" ";
         }
         cout<<endl;
     }
